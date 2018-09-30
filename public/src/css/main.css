@@ -1,0 +1,30 @@
+.anton{
+	font-family: "Do Hyeon";
+	font-size: 350%;
+}
+p{
+	font-family: "Roboto";
+	font-size: 150%;
+}
+.newline{
+	display: block;
+}
+body{
+	background: white;
+}
+.smaller{
+	height: 225px;
+	width: 100%;
+}
+.jumbotron-heading{
+	font-family: 'Roboto-light', sans-serif;
+	font-weight: 300;
+	text-align: center !important;
+}
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}

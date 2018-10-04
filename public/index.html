@@ -13,6 +13,8 @@
       enable_page_level_ads: true
     });
     </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -102,7 +104,7 @@
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var money_display = document.getElementById("money");
-profits = [25, 0, 268, 100, 80, 200, 8, 50]
+profits = [25, 0, 268, 100, 80, 8, 50]
 gatheredmoney = 0
 console.log("Started")
 for(let x = 0; x < profits.length; x++){
@@ -113,7 +115,7 @@ money_display.innerHTML = "$" + gatheredmoney.toString()
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Data_Scraper", "Discord_Sandbot", "Fupi-CST", "Vod_Money", "Mickmon-Website", "WPpage", "Resume", "Email-Crawler"],
+        labels: ["Data_Scraper", "Discord_Sandbot", "Fupi-CST", "Vod_Money", "Mickmon-Website", "Resume", "Email-Crawler"],
         datasets: [{
             label: 'Project Profit $',
             data: profits,

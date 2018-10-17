@@ -94,6 +94,18 @@
               You have plenty of options to choose like the description, title and tags for example.</i>"
         </p>
         <br>
+        <h3 class="jumbotron-heading">--<a href="https://github.com/Johk3/Common_Passwords">Common_Passwords</a>--</h3>
+        <p style="text-align: center !important; color: #073b4c">
+            "<i>The meaning of this project is to scan 10 million passwords,<br>
+              and find the top 20 most used passwords. This is quite processing heavy.</i>"
+        </p>
+        <br>
+        <h3 class="jumbotron-heading">--<a href="https://github.com/Johk3/Edu-Scraper">Edu-Scraper</a>--</h3>
+        <p style="text-align: center !important; color: #073b4c">
+            "<i>Edu-Scraper scrapes the data of various people from various universities.<br>
+              The scraper will display all the useful data like the education of the person etc...</i>"
+        </p>
+        <br>
         <br>
         <p style="text-align: center !important; color: #073b4c">
           This graph shows the profit of the projects Fupilio has done.<br>
@@ -104,7 +116,7 @@
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var money_display = document.getElementById("money");
-profits = [25, 0, 268, 100, 80, 8, 50]
+profits = [25, 0, 268, 100, 80, 8, 50, 35, 40]
 gatheredmoney = 0
 console.log("Started")
 for(let x = 0; x < profits.length; x++){
@@ -115,7 +127,7 @@ money_display.innerHTML = "$" + gatheredmoney.toString()
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Data_Scraper", "Discord_Sandbot", "Fupi-CST", "Vod_Money", "Mickmon-Website", "Resume", "Email-Crawler"],
+        labels: ["Data_Scraper", "Discord_Sandbot", "Fupi-CST", "Vod_Money", "Mickmon-Website", "Resume", "Email-Crawler", "Common_Passwords", "Edu-Scraper"],
         datasets: [{
             label: 'Project Profit $',
             data: profits,
